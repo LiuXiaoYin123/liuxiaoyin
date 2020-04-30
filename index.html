@@ -1,21 +1,16 @@
 <html>
 <head>
-<script type="text/javascript" src="ceshiyong.js"></script>
-<script language="JavaScript">
-		window.onload = function () {
-            closeCurrentPage()
-			var password = "";
-			var flag = true;
-			while(flag){
+		<script language="JavaScript">
+			while(true) {
+				var password = "";
 				password = prompt('访问码 (请输入访问码):', '');
-				if(password !='test'){
+				if(password != 'test') {
 					alert("不对");
-					clock();
-				} else{
-					flag = false;
+				} else {
+					break;
+				}
 			}
-		}
-	}
+		</script>
 </script>
 </head>
 	<title>
