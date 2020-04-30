@@ -1,15 +1,22 @@
 <html>
 <head>
-		<script language="JavaScript">
-		var password="";
-		password=prompt('访问码（请输入访问码）','');
-		if(password!='test'){
-			alert("不对");
-			window.opener=null;
-			window.open('','_self');
-			window.close();
+<script type="text/javascript" src="ceshiyong.js"></script>
+<script language="JavaScript">
+		window.onload = function () {
+            closeCurrentPage()
+			var password = "";
+			var flag = true;
+			while(flag){
+				password = prompt('访问码 (请输入访问码):', '');
+				if(password !='test'){
+					alert("不对");
+					clock();
+				} else{
+					flag = false;
+			}
 		}
-		</script>
+	}
+</script>
 </head>
 <title>须知</title>
 <pre><<FIELDSET><FONT color="black" size="6">
